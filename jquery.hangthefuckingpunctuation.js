@@ -6,15 +6,10 @@
 			if (first != "\"" && first != "'") return;
 			$(this).text( text.substring(1) );
 			$newQuote = $("<span>"+first+"</span>").prependTo($(this));
-			if ($(this).css("position") != "relative" && $(this).css("position") != "absolute" && $(this).css("position") != "fixed") {
-				$(this).css({
-					position: "relative"
-				})
-			}
+			var quoteWidth = $newQuote.width();
 			$newQuote.css({
-				position: "absolute",
-				left: -$newQuote.width(),
-				top: 0
+				display: "inline-block",
+				marginLeft: -quoteWidth
 			});
 		})
 	};
