@@ -22,6 +22,7 @@
 
 		<style>
 			p {
+				float: left;
 				border: 2px dashed #ddd;
 				color: black;
 				font-size: 20pt;
@@ -34,16 +35,18 @@
 
 		<script>
 			$(document).ready(function(){
-				$(".hang").hangTheFuckingPunctuation();
+				$(".hang").hangThePunctuation();
 			});
 		</script>
 	</head>
 	<body>
 		
 		<pre>
-			$(document).ready(function(){
-				$.hangTheFuckingPunctuation(".hang");
-			});	
+$(document).ready(function(){
+	$(".hang").hangTheFuckingPunctuation();
+	// or for the faint of heart:
+	//$(".hang").hangThePunctuation();
+});	
 		</pre>
 
 		<p>
@@ -51,7 +54,7 @@
 		</p>
 
 		<p class="hang">
-			'This punctuation is, because this paragraph has the class, "hang". Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a diam semper, bibendum nisi ac, imperdiet arcu. Donec non turpis erat. Phasellus non risus blandit sem semper accumsan in nec est.'
+			'This punctuation is, because this paragraph has the class "hang". Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a diam semper, bibendum nisi ac, imperdiet arcu. Donec non turpis erat. Phasellus non risus blandit sem semper accumsan in nec est.'
 		</p>
 
 		<p class="hang">

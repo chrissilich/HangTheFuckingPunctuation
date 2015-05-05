@@ -13,4 +13,5 @@
 			});
 		})
 	};
+	$.fn.hangThePunctuation = $.fn.hangTheFuckingPunctuation;
 }( jQuery ));
