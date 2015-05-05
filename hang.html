@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 8]> <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 oldie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+	<head>
+		<!-- 
+			Oh. Well hello there. Welcome, friendly peruser of HTML. Stay a while. Look around. If you get stuck, feel free
+			to contact me, the web developer who wrote this code, and I'll see what I can do to help you. My name is 
+			Chris Silich. My website is http://www.chrissilich.com and my email address is cs@chrissilich.com			
+	 	-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title></title>
+
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.hangthefuckingpunctuation.js"></script>
+
+		<style>
+			p {
+				border: 2px dashed #ddd;
+				color: black;
+				font-size: 20pt;
+				font-weight: bold;
+				width: 400px;
+				margin-left: 100px;
+				line-height: 150%;
+			}
+		</style>
+
+		<script>
+			$(document).ready(function(){
+				$(".hang").hangTheFuckingPunctuation();
+			});
+		</script>
+	</head>
+	<body>
+		
+		<pre>
+			$(document).ready(function(){
+				$.hangTheFuckingPunctuation(".hang");
+			});	
+		</pre>
+
+		<p>
+			"This punctuation is not hanging. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a diam semper, bibendum nisi ac, imperdiet arcu. Donec non turpis erat. Phasellus non risus blandit sem semper accumsan in nec est."
+		</p>
+
+		<p class="hang">
+			'This punctuation is, because this paragraph has the class, "hang". Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a diam semper, bibendum nisi ac, imperdiet arcu. Donec non turpis erat. Phasellus non risus blandit sem semper accumsan in nec est.'
+		</p>
+
+		<p class="hang">
+			"It works with double-quotes too. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a diam semper, bibendum nisi ac, imperdiet arcu. Donec non turpis erat. Phasellus non risus blandit sem semper accumsan in nec est."
+		</p>
+
+
+	</body>
+</html>
